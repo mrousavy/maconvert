@@ -1,6 +1,6 @@
 {
   "name": "maconvert",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A fast and beautiful converter app",
   "main": "index.js",
   "scripts": {
@@ -25,5 +25,6 @@
   "bin": {
     "svgpng": "./index.js",
     "maconvert": "./index.js"
-  }
+  },
+  "repository": "github:mrousavy/maconvert"
 }
