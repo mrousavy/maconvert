@@ -1,0 +1,29 @@
+{
+  "name": "maconvert",
+  "version": "1.0.0",
+  "description": "A fast and beautiful converter app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "converter",
+    "macos",
+    "app",
+    "png",
+    "universal",
+    "fast"
+  ],
+  "author": "mrousavy",
+  "license": "ISC",
+  "dependencies": {
+    "async": "^2.6.2",
+    "convert-svg-to-png": "^0.5.0",
+    "fs": "0.0.1-security",
+    "svg-dimensions": "^1.0.2"
+  },
+  "bin": {
+    "svgpng": "./index.js",
+    "maconvert": "./index.js"
+  }
+}
