@@ -9,8 +9,8 @@ String.prototype.endsWith = function (suffix) {
 };
 
 process.argv.forEach((argument, index) => {
-  console.log(`Processing ${argument}..`);
   if (argument.endsWith('.svg') && fs.existsSync(argument)) {
+    console.log(`Converting ${argument}..`);
     svgDimension.get(argument, async (err, dimensions) => {
       if (err) {
         console.log(err);
@@ -23,7 +23,5 @@ process.argv.forEach((argument, index) => {
         console.log(`Converted ${argument} to ${outputFilePath}!`);
       }
     });
-  } else {
-    console.log('Not a .svg file!');
   }
 });
